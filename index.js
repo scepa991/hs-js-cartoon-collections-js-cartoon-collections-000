@@ -3,7 +3,7 @@ const dwarves = ["Dopey", "Grumpy", "Bashful"];
    function DwarfRollCall(dwarves) {
      value.index
       return dwarves.map((value, index + 1) => value "numb" + "." + " " +  );
-      
+
    }
 
    function dwarfRollCall(dwarves){
@@ -17,7 +17,7 @@ const dwarves = ["Dopey", "Grumpy", "Bashful"];
    var fruits = ["apple", "banana", "orange"];
    var result = summonCaptainPlanet(fruits);
    function SummonCaptainPlanet(fruits){
-     
+
      return fruits.map(value => value.toLocaleUpperCase() + '!');
    }
 
