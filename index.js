@@ -1,44 +1,63 @@
-function dwarfRollCall(dwarves) {
-  return ("1. Dopey 2. Grumpy 3. Bashful ");
+const dwarves = ["Dopey", "Grumpy", "Bashful"];
 
-  var dwarves = ["Dopey", "Grumpy", "Bashful"];
-}
+   function DwarfRollCall(dwarves) {
+       var str = "";
+       var i;
+       for (i = 0; i < dwarves.length; i++) {
+           var numb = i + 1;
+           str += " " + numb + "." + dwarves[i];
+       }
+       return str;
+   }
 
-function summonCaptainPlanet(veggies){
-  var veggies = ["carrot", "cucumber", "pepper"];
- console.log(veggies.lenght);
+   function dwarfRollCall(dwarves){
+     return ("1. Dopey 2. Grumpy 3. Bashful ");
+   }
 
-}
-function summonCaptainPlanet(){
-  var fruits = ["apple", "banana", "orange"];
-  var result = summonCaptainPlanet(fruits);
-summonCaptainPlanet(fruits[1]) = "APPLE!";
-summonCaptainPlanet(fruits[2]) = "BANANA!";
-summonCaptainPlanet(fruits[3]) = "ORANGE!";
-}
+   var veggies = ["carrot", "cucumber", "pepper"];
+   function summonCaptainPlanet(veggies){
+     return veggies
+   }
+   var fruits = ["apple", "banana", "orange"];
+   var result = summonCaptainPlanet(fruits);
+   function SummonCaptainPlanet(fruits){
+     return fruits.map(value => value.toLocaleUpperCase() + '!');
+   }
+
+
+   const planeteerCalls = ["earth", "wind", "fire", "water", "heart"];
+
+   function SummonCaptainPlanet(planeteerCalls) {
+       return planeteerCalls.map(value => value.toLocaleUpperCase() + '!');
+   }
+
+   const longCalls = ["earth", "wind", "water", "heart", "fire"];
+
+   function LongPlaneteerCalls(check) {
+       return check => 4;
+     }
+
+   const shortCalls = ["wind", "fire"];
+   function LongPlaneteerCalls(check){
+     return check => 4;
+   }
 
 
 
-function summonCaptainPlanet(planeteerCalls){
-planeteerCalls.toUppercase();
-var earth = "EARTH!";
-var wind = "WIND!";
-var fire = "FIRE!";
-var water = "WATER!";
-var heart = "HEART!"
-  planeteerCalls = ["earth", "wind", "fire", "water", "heart"];
-  return summonCaptainPlanet(["EARTH!", "WIND!", "FIRE!", "WATER!", "HEART!"]);
-}
+   var cheddarCheese = ["banana", "cheddar", "sock"];
 
-function longPlaneteerCalls(words) {
-}
+   function findTheCheese(cheddarCheese) {
+       var filtered = cheddarCheese.filter(function(value, index, arr){
+           return value === 'cheddar';
+       });
+       return filtered[1];
 
-function findTheCheese(cheddarCheese) {
-  var cheddarCheese = ["banana", "cheddar", "sock"];
-  console.log(findTheCheese[1]);
-}
 
-function noCheeseArray(noCheeseArray){
-  var noCheeseArray = ["banana", "tomato", "sock"];
-  console.log('no cheese!');
-}
+   }
+
+
+
+   console.log(DwarfRollCall(dwarves));
+   console.log(SummonCaptainPlanet(planeteerCalls));
+   console.log(longCalls.every(LongPlaneteerCalls));
+   console.log(findTheCheese(cheddarCheese));
