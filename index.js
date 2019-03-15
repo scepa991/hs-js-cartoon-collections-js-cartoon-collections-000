@@ -1,13 +1,9 @@
 const dwarves = ["Dopey", "Grumpy", "Bashful"];
 
    function DwarfRollCall(dwarves) {
-       var str = "";
-       var i;
-       for (i = 0; i < dwarves.length; i++) {
-           var numb = i + 1;
-           str += " " + numb + "." + dwarves[i];
-       }
-       return str;
+     value.index
+      return dwarves.map((value, index + 1) => value "numb" + "." + " " +  );
+      
    }
 
    function dwarfRollCall(dwarves){
@@ -21,6 +17,7 @@ const dwarves = ["Dopey", "Grumpy", "Bashful"];
    var fruits = ["apple", "banana", "orange"];
    var result = summonCaptainPlanet(fruits);
    function SummonCaptainPlanet(fruits){
+     
      return fruits.map(value => value.toLocaleUpperCase() + '!');
    }
 
